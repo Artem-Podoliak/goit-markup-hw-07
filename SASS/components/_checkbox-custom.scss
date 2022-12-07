@@ -1,0 +1,87 @@
+.checkbox-div {
+    position: relative;
+    justify-content: center;
+    display: inline-flex;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 425px;
+    
+}
+.checkbox-input {
+    -webkit-appearance: none;
+   -moz-appearance: none;
+        appearance: none;
+}
+.checkbox-txt {
+    margin-left: 30px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(117, 117, 117, 1);
+}
+.checkbox-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+
+    letter-spacing: 0.03em;
+    color: rgba(33, 150, 243, 1);
+}
+.checkbox-custom {
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid  #212121;
+    border-radius: 2px;
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-input:checked +.checkbox-custom {
+    background-color: $logo-text-color;
+    background-origin: border-box;
+    border-color: $logo-text-color;
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.user-input:not(:placeholder-shown), .user-input:not(:placeholder-shown) + .user-svg {
+    border-color: #188CE8;
+    fill: $logo-text-color;
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}   
+.user-coment:not(:placeholder-shown) {
+    border-color: #188CE8;
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
+.button-send {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    color: #FFFFFF;
+
+    background: #2196F3;
+    border: none;
+    border-radius: 4px;
+    border-color: $logo-text-color;
+
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

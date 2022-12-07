@@ -1,0 +1,57 @@
+.foot {
+    display: flex;
+    align-items: baseline;
+}
+.footer {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 28px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.logo-color {
+    color: $logo-text-color;
+}
+.addres {
+    font-style: normal;
+    width: 231px;
+}
+.address-txt {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $hero-text-color;
+}
+.address-list {
+    display: inline-block;
+}
+.address-list__item {
+    margin-bottom: 12px;
+
+    &:last-child {
+    margin-bottom: 0;
+    }
+}
+.contact-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: $logo-text-color;
+    transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
